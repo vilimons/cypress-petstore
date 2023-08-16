@@ -23,7 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-Cypress.Commands.add('new-user', (id, username, firstname, lastname, password, phone) => {
-    cy.visit('https://petstore.swagger.io/#/user/createUser')
-})
