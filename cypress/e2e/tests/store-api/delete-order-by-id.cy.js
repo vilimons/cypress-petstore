@@ -19,7 +19,7 @@ describe('DELETE /store/order/{orderId} API', () => {
         });
     });
 
-    it('should return 400 when the orderId is invalid', () => {
+    it('should return 404 when the orderId is invalid', () => {
         cy.request({
         method: 'DELETE',
         url: `https://petstore.swagger.io/v2/store/order/jdwq`,
