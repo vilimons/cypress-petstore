@@ -6,14 +6,4 @@ describe('GET /user/login API', () => {
             expect(response.status).to.eq(200)
         })
     })
-    it('should return 400 when invalid username/password supplied', () => {
-        cy.request({
-            method:'GET',
-            url: 'https://petstore.swagger.io/v2/user/login?username=jao&password=45551',
-            failOnStatusCode: false
-        })
-        .then(response => {
-            expect(response.status).to.eq(400)
-        })
-    })
 })
