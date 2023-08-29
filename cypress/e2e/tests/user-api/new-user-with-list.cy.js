@@ -16,7 +16,7 @@ const USER_OBJECT_LIST = [
 describe('POST /user API', () => {
     it('should return 200 when a new user is successfully created', () => {
         cy.request('POST', 
-                  'https://petstore.swagger.io/v2/user/createWithList',
+                  '/user/createWithList',
                     USER_OBJECT_LIST).then(response => {
             expect(response.status).to.eq(200)
         })

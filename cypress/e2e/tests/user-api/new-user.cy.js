@@ -3,7 +3,7 @@
 describe('POST /user API', () => {
     it('should return 200 when a new user is successfully created', () => {
         cy.request('POST', 
-                  'https://petstore.swagger.io/v2/user',
+                  '/user',
                   {
                     id: 1,
                     username: "bob",
