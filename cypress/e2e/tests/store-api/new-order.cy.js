@@ -6,7 +6,7 @@ describe('POST /order/store API', () => {
     it('should return 200 when a new order is successfully placed', () => {
         cy.request(
             'POST', 
-            'https://petstore.swagger.io/v2/store/order', 
+            '/store/order', 
             ORDER)
             .then(response => {
             expect(response.status).to.eq(200)
