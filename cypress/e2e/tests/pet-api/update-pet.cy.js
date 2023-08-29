@@ -20,7 +20,7 @@ describe('PUT /pet API', () => {
             ],
             status: 'available'
         }
-        cy.request('PUT', 'https://petstore.swagger.io/v2/pet', PET_UPDATED).then(response => {
+        cy.request('PUT', '/pet', PET_UPDATED).then(response => {
             expect(response.status).to.eq
         })
 
