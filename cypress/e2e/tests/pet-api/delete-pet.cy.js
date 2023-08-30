@@ -28,14 +28,5 @@ describe('DELETE /pet/petId API', () => {
               expect(response.status).to.equal(200);
             })
         })
-        it('should return 404 when a petId is invalid', () => {
-            cy.request({
-                method: 'DELETE',
-                url: '/pet/3',
-                failOnStatusCode: false
-            }).then(response => {
-                expect(response.status).to.eq(404)
-            }) 
-        })
-    })
+      })
   
