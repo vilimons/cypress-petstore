@@ -85,6 +85,4 @@ Cypress provides detailed test logs, real-time test execution, and captures scre
 <br>
 <br>
 <br>
-<br>
-<br>
 ### Thank you for checking out the Cypress Petstore API Test Project. Feel free to reach out if you have any questions or suggestions!
