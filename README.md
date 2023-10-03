@@ -62,7 +62,7 @@ The project is structured for clarity and modularity:
     |   |   |   ├── store-api
     |   |   |   ├── user-api 
     │   ├── fixtures/
-    |   ├── support/
+    |   ├── videos/
     │   └── support/
     ├── cypress.json
     ├── package.json
@@ -87,4 +87,4 @@ Cypress provides detailed test logs, real-time test execution, and captures scre
 <br>
 <br>
 <br>
-Thank you for checking out the Cypress Petstore API Test Project. Feel free to reach out if you have any questions or suggestions!
+### Thank you for checking out the Cypress Petstore API Test Project. Feel free to reach out if you have any questions or suggestions!
