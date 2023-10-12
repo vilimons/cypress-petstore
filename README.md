@@ -5,14 +5,19 @@ Welcome to the **Cypress Petstore API Test Project**! This repository contains a
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Writing Tests](#writing-tests)
-- [Running Tests](#running-tests)
-- [Test Reporting](#test-reporting)
+- [Cypress Petstore API Test Project](#cypress-petstore-api-test-project)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Project Structure](#project-structure)
+  - [Writing Tests](#writing-tests)
+  - [Running Tests](#running-tests)
+  - [Reports](#reports)
+    - [Example of Verifying Reports](#example-of-verifying-reports)
+  - [Continuous Integration](#continuous-integration)
+    - [Thank you for checking out the Cypress Petstore API Test Project. Feel free to reach out if you have any questions or suggestions!](#thank-you-for-checking-out-the-cypress-petstore-api-test-project-feel-free-to-reach-out-if-you-have-any-questions-or-suggestions)
 
 ## Introduction
 
@@ -55,6 +60,8 @@ The project is structured for clarity and modularity:
 
     ```
     cypress-petstore
+    ├──.github/
+    │   ├── workflows/
     ├── cypress/
     │   ├── e2e/
     |   |   ├── tests/
@@ -62,8 +69,9 @@ The project is structured for clarity and modularity:
     |   |   |   ├── store-api
     |   |   |   ├── user-api 
     │   ├── fixtures/
-    |   ├── videos/
-    │   └── support/
+    |   ├── results/
+        ├── support/
+    |   └── videos/
     ├── cypress.json
     ├── package.json
     ├── README.md
@@ -80,7 +88,46 @@ The tests are organized under the cypress/e2e/tests directory, categorized by di
 
 2. Click on the desired test file to run the tests.
 
-## Test Reporting
+## Reports
+1. Initial Setup
+   Make sure you have set up Cypress and Mochawesome in your project. If you haven't done so already, follow the relevant setup steps.
+
+2. Run Your Cypress Tests
+   Ensure that you already have your Cypress tests ready and working correctly. You can run them with the following command:
+    ```bash
+    npm run cypress:run
+
+3. Accessing the Mochawesome Report
+   After running the tests, a directory named mochawesome-report will be created in your project. This directory contains the reports generated automatically. You can access the HTML report by opening the mochawesome.html file in a web browser.
+   ```bash
+   ./results/mochawesome.html
+
+4. Verifying the Reports
+   Mochawesome provides a wealth of information about test results, including test outcomes, detailed logs, execution times, and more. You can use the report to:
+
+   Check test results.
+   Analyze detailed logs for specific tests.
+   Identify failing tests and the reasons for the failures.
+
+### Example of Verifying Reports
+
+   Here's a simple example of how to verify reports using Mochawesome:
+   
+   1. Open the mochawesome.html file in your browser.
+   
+   2. On the report page, you'll see an overview of the tests executed.
+   
+   3. To view details of a specific test, click on the test name in the "Test" column on the left. This will open a page with detailed information about the test.
+   
+   4. To access logs and error messages, scroll down on the test details page.
+   
+   5. Use the information provided in the report to troubleshoot issues or verify test results.
+   
+   Keep in mind that Mochawesome offers advanced features such as chart generation and metrics that can help in analyzing test results. Explore the Mochawesome documentation for more information on making the most of this report.
+   
+
+## Continuous Integration
+This project contains CI with Github Actions. You can see the configuration file [here](https://github.com/vilimons/cypress-vuestorefront/blob/main/cypress/.github/workflow/main.
 Cypress provides detailed test logs, real-time test execution, and captures screenshots and videos for each test run.
 <br>
 <br>
