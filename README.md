@@ -5,7 +5,6 @@ Welcome to the **Cypress Petstore API Test Project**! This repository contains a
 
 ## Table of Contents
 
-- [Cypress Petstore API Test Project](#cypress-petstore-api-test-project)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
@@ -125,7 +124,7 @@ The tests are organized under the cypress/e2e/tests directory, categorized by di
    
 
 ## Continuous Integration
-This project contains CI with Github Actions. You can see the configuration file [here](https://github.com/vilimons/cypress-vuestorefront/blob/main/cypress/.github/workflow/main.
+This project contains CI with Github Actions. You can see the configuration file [here](https://github.com/vilimons/cypress-petstore/blob/main/cypress/.github/workflow/main.
 Cypress provides detailed test logs, real-time test execution, and captures screenshots and videos for each test run.
 <br>
 <br>
