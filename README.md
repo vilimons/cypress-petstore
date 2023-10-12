@@ -15,9 +15,7 @@ Welcome to the **Cypress Petstore API Test Project**! This repository contains a
   - [Writing Tests](#writing-tests)
   - [Running Tests](#running-tests)
   - [Reports](#reports)
-    - [Example of Verifying Reports](#example-of-verifying-reports)
   - [Continuous Integration](#continuous-integration)
-    - [Thank you for checking out the Cypress Petstore API Test Project. Feel free to reach out if you have any questions or suggestions!](#thank-you-for-checking-out-the-cypress-petstore-api-test-project-feel-free-to-reach-out-if-you-have-any-questions-or-suggestions)
 
 ## Introduction
 
